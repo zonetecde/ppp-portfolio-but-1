@@ -7,7 +7,22 @@
     </head>
     <body style="font-family: Arial, sans-serif">
         <h1>Autoévaluation de la Compétence 2</h1>
-        <!-- ICI TEXTE OU AUDIO EXPLIQUANT CE QUON A FAIT DURANT LA SAE (ou apres le tableau) avec imgs etc -->
+
+        <h1>Présentation de la SAÉ 1.02</h1>
+        <p>Durant cette SAÉ, nous avons comparé expérimentalement l'efficacité de deux types d'implémentation de listes triées d'objets pour les opérations d'ajout, de suppression et de test d'appartenance. Nos principales réalisations incluent :</p>
+        <ul style="list-style: none; padding: 0">
+            <li>✔️ Une implémentation d'une liste contiguë</li>
+            <li>✔️ Une implémentation d'une liste chainée</li>
+            <li>✔️ Une implémentation optionnelle d'une liste chainée utilisant une liste chainée pour gérer ses places libres</li>
+            <li>✔️ Une génération automatique de fichier CSV pour les résultats en fonction du nombre d'éléments de base dans la liste</li>
+            <li>✔️ Une génération automatique de graphique à partir des fichiers CSV avec trois courbes pour comparer les trois implémentations</li>
+            <li>✔️ Une écriture en pseudo-code des algorithmes utilisés</li>
+        </ul>
+        <figure>
+            <img src="https://raw.githubusercontent.com/zonetecde/ppp-portfolio-but-1/refs/heads/main/sae1-2.png" alt="Aperçu du site S&P" style="width: 50%; margin: 1rem auto" />
+            <figcaption>Compte rendu réalisé</figcaption>
+        </figure>
+        <p>Les thèmes abordés incluent le développement Java, la comparaison d'algorithmes, l'implémentation de listes triées et la génération de graphiques.</p>
 
         <table style="width: 100%; border-collapse: collapse">
             <tr>
@@ -23,35 +38,53 @@
                     </div>
                 </td>
                 <td style="border: 1px solid black; background-color: #ffffff; padding: 1.5rem 8px">
-                    Lorem Ipsum Generator<br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Dans le cadre de cette SAÉ, j'ai dû analyser les spécificités des différents types de listes triées et identifier les critères de performance les plus pertinents à prendre en compte lors du codage de ces dernières. Cette étape
+                    initiale nous a permis de mieux structurer notre approche et de se répartir le travail équitablement avec Guillaume. Cependant, j'ai constaté que mes analyses initiales manquaient parfois de précision. Par exemple, certaines
+                    hypothèses sur les performances de la liste chaînée optionnelle n'ont pas été validées en pratique, ce qui a nécessité des ajustements en cours de projet. Cette expérience m'a appris l'importance de poser des bases solides dès le
+                    départ pour éviter des retours en arrière coûteux. Pour m'améliorer, je devrais approfondir davantage les analyses théoriques en amont, notamment en étudiant plus rigoureusement le sujet avant de passer à l'expérimentation.
                 </td>
             </tr>
             <tr>
                 <td style="border: 1px solid black; background-color: rgb(251, 248, 248); padding: 1.5rem 8px">AC 2 Comparer des algorithmes pour des problèmes classiques</td>
                 <td style="border: 1px solid black; background-color: rgb(251, 248, 248); padding: 1.5rem 8px">
                     <div style="width: 100%; background-color: #e0e0e0; border-radius: 5px; position: relative; border: 1px solid #7e7a7a">
-                        <div style="width: 75%; height: 20px; border-radius: 5px; background-color: #ffcd3c"></div>
+                        <div style="width: 75%; height: 20px; border-radius: 5px; background-color: #278637"></div>
                     </div>
                 </td>
-                <td style="border: 1px solid black; background-color: #ffffff; padding: 1.5rem 8px">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+                <td style="border: 1px solid black; background-color: #ffffff; padding: 1.5rem 8px">
+                    La comparaison des trois types de listes triées a été au cœur de cette SAÉ. Guillaume et moi avons conçu une série de tests rigoureux pour évaluer les performances des opérations d'ajout, de suppression et de recherche sur ces
+                    listes en fonction de leur taille de départ. Nous avons utilisé des outils comme la génération automatique de fichiers CSV et des graphiques pour visualiser les résultats. Cette démarche m'a permis d'observer des différences
+                    significatives, notamment l'efficacité accrue des listes chaînées pour les opérations en tête et la supériorité de la liste contiguë pour les opérations en fin. J'ai également appris à interpréter les données obtenues pour en
+                    tirer des conclusions pertinentes. Cependant, je pense que je pourrais encore améliorer ma capacité à concevoir des expériences de comparaison plus complexes pour explorer davantage les nuances des algorithmes étudiés.
+                </td>
             </tr>
             <tr>
                 <td style="border: 1px solid black; background-color: rgb(251, 248, 248); padding: 1.5rem 8px">AC 3 Expérimenter la notion de compilation</td>
                 <td style="border: 1px solid black; background-color: rgb(251, 248, 248); padding: 1.5rem 8px">
                     <div style="width: 100%; background-color: #e0e0e0; border-radius: 5px; position: relative; border: 1px solid #7e7a7a">
-                        <div style="width: 60%; height: 20px; border-radius: 5px; background-color: #ffa500"></div>
+                        <div style="width: 85%; height: 20px; border-radius: 5px; background-color: #1f6b2c"></div>
                     </div>
                 </td>
-                <td style="border: 1px solid black; background-color: #ffffff; padding: 1.5rem 8px">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+                <td style="border: 1px solid black; background-color: #ffffff; padding: 1.5rem 8px">
+                    Pendant cette SAÉ, j'ai découvert l'importance de la compilation et de son rôle dans la performance des applications. En utilisant Java, j'ai pu observer comment certaines opérations influent directement l'efficacité des
+                    algorithmes, comme la gestion de la mémoire et le coût des opérations sur des structures contiguës ou chaînées. Par exemple, la liste contiguë, bien qu'efficace pour les opérations en fin, montrait des pics de performances
+                    dégradées dus aux décalages nécessaires lors de l'ajout en tête. Ces observations m'ont permis de comprendre que la compilation et l'optimisation logicielle ne sont pas des processus universels, mais doivent être adaptés au cas
+                    d'usage.
+                </td>
             </tr>
             <tr>
                 <td style="border: 1px solid black; background-color: rgb(251, 248, 248); padding: 1.5rem 8px">AC 4 Formaliser et mettre en œuvre des outils mathématiques</td>
                 <td style="border: 1px solid black; background-color: rgb(251, 248, 248); padding: 1.5rem 8px">
                     <div style="width: 100%; background-color: #e0e0e0; border-radius: 5px; position: relative; border: 1px solid #7e7a7a">
-                        <div style="width: 90%; height: 20px; border-radius: 5px; background-color: #28852c"></div>
+                        <div style="width: 65%; height: 20px; border-radius: 5px; background-color: #408b44"></div>
                     </div>
                 </td>
-                <td style="border: 1px solid black; background-color: #ffffff; padding: 1.5rem 8px">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</td>
+                <td style="border: 1px solid black; background-color: #ffffff; padding: 1.5rem 8px">
+                    L'utilisation des outils mathématiques a été essentielle pour interpréter les résultats obtenus. Avec Guillaume, nous avons appliqué des formules pour calculer les temps moyens et analyser les courbes générées à partir des
+                    fichiers CSV. Cette formalisation a permis de dégager des tendances claires, comme la croissance exponentielle des temps pour certaines opérations ou la linéarité pour d'autres. J'ai également utilisé mes connaissances en
+                    statistiques pour interpréter les écarts entre les différentes implémentations, ce qui a renforcé la fiabilité de nos conclusions. Malgré celà, nous aurions pu aller plus loin dans la modélisation mathématique des performances des
+                    listes triées pour prédire leur comportement dans des cas non testés expérimentalement, mais nous n'y avons pas pensé sur le moment.
+                </td>
             </tr>
         </table>
     </body>

@@ -5,7 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Autoévaluation</title>
     </head>
-    <body style="font-family: Arial, sans-serif">
+    <body style="font-family: Arial, sans-serif; line-height: 1.6">
+        <!-- Présentation de la SAÉ -->
+        <header style="text-align: center; margin-bottom: 2rem">
+            <h3>Présentation de la SAÉ 1.04</h3>
+            <br />
+
+            <p style="text-align: justify; font-weight: bold">
+                Durant cette SAÉ, j'ai travaillé sur la conception et l'interrogation d'une base de données relationnelle pour un jeu de cartes inspiré d'Hearthstone. L'objectif était de modéliser l'univers du jeu avec ses cartes, joueurs, decks et
+                effets, puis d'implémenter cette base en SQL et de réaliser des requêtes complexes pour extraire diverses informations.
+            </p>
+            <br />
+            <h3>Mes principales réalisations :</h3>
+            <br />
+            <ul style="list-style: none; padding: 0; text-align: center">
+                <li>✔️ Conception d'un modèle relationnel complet avec 10 tables interconnectées</li>
+                <li>✔️ Implémentation de la base de données avec contraintes et clés étrangères</li>
+                <li>✔️ Réalisation de 17 requêtes SQL complexes avec jointures et sous-requêtes</li>
+                <li>✔️ Utilisation d'opérateurs ensemblistes (UNION, INTERSECT, MINUS)</li>
+                <li>✔️ Manipulation de fonctions de dates et de chaînes de caractères</li>
+                <li>✔️ Gestion des valeurs nulles et des agrégations</li>
+            </ul>
+            <figure>
+                <img src="https://raw.githubusercontent.com/zonetecde/ppp-portfolio-but-1/refs/heads/main/sae1-2.png" alt="Schéma de base de données" style="width: 50%; margin: 1rem auto 1rem auto" />
+            </figure>
+            <p style="text-align: center; width: 100%">Modèle de base de données réalisé</p>
+
+            <p>Les thèmes abordés incluent la modélisation relationnelle, l'implémentation SQL, les requêtes complexes avec jointures multiples, et l'optimisation des performances des bases de données.</p>
+        </header>
+
+        <!-- Tableau d'autoévaluation -->
         <h1>Autoévaluation de la Compétence 4</h1>
         <table style="width: 100%; border-collapse: collapse">
             <tr>
@@ -17,28 +46,46 @@
                 <td style="border: 1px solid black; background-color: rgb(251, 248, 248); padding: 1.5rem 8px">AC 1 Mettre à jour et interroger une base de données relationnelle</td>
                 <td style="border: 1px solid black; background-color: rgb(251, 248, 248); padding: 1.5rem 8px">
                     <div style="width: 100%; background-color: #e0e0e0; border-radius: 5px; position: relative; border: 1px solid #7e7a7a">
-                        <div style="width: 50%; height: 20px; border-radius: 5px; background-color: #ffa500"></div>
+                        <div style="width: 75%; height: 20px; border-radius: 5px; background-color: #668d37"></div>
                     </div>
+                    <p style="text-align: center; margin: 0">75%</p>
                 </td>
-                <td style="border: 1px solid black; background-color: #ffffff; padding: 1.5rem 8px">Exemple de justification pour l'AC 1 sur la mise à jour des bases de données.</td>
+                <td style="border: 1px solid black; background-color: #ffffff; padding: 1.5rem 8px">
+                    J'ai démontré une solide maîtrise de l'interrogation de bases de données relationnelles en réalisant 17 requêtes SQL complexes. Par exemple, j'ai su utiliser des jointures multiples pour récupérer les cartes d'attaque supérieure à
+                    5 avec leurs classes et decks associés (Q6), ou encore identifier les joueurs ayant des amis plus anciens qu'eux grâce à des auto-jointures sophistiquées (Q10). J'ai également maîtrisé les opérateurs ensemblistes comme MINUS pour
+                    trouver les cartes sans effet (Q5) ou les cartes possédées par un joueur mais pas par un autre (Q15). Les fonctions de manipulation de dates et de chaînes ont été utilisées efficacement, notamment pour calculer l'âge des decks en
+                    années, mois et jours (Q8) ou filtrer les joueurs par initiale (Q7). Cependant, je peux encore progresser sur l'optimisation de certaines requêtes complexes impliquant de nombreuses jointures.
+                </td>
             </tr>
             <tr>
                 <td style="border: 1px solid black; background-color: rgb(251, 248, 248); padding: 1.5rem 8px">AC 2 Visualiser des données</td>
                 <td style="border: 1px solid black; background-color: rgb(251, 248, 248); padding: 1.5rem 8px">
                     <div style="width: 100%; background-color: #e0e0e0; border-radius: 5px; position: relative; border: 1px solid #7e7a7a">
-                        <div style="width: 75%; height: 20px; border-radius: 5px; background-color: #ffcd3c"></div>
+                        <div style="width: 65%; height: 20px; border-radius: 5px; background-color: #ffa500"></div>
                     </div>
+                    <p style="text-align: center; margin: 0">65%</p>
                 </td>
-                <td style="border: 1px solid black; background-color: #ffffff; padding: 1.5rem 8px">Justification pour l'AC 2 sur la visualisation des données.</td>
+                <td style="border: 1px solid black; background-color: #ffffff; padding: 1.5rem 8px">
+                    J'ai travaillé sur la présentation et la structuration des données grâce à des requêtes d'agrégation comme celle calculant les statistiques totales par deck (attaque, mana, vie) dans la Q16. J'ai également su gérer l'affichage des
+                    valeurs nulles en utilisant COALESCE pour remplacer les classes nulles par 'neutre' (Q14), améliorant ainsi la lisibilité des résultats. Les requêtes de comptage et de regroupement m'ont permis de synthétiser l'information de
+                    manière claire. Néanmoins, je n'ai pas encore exploré les possibilités de visualisation graphique avancée ou d'export vers des outils de business intelligence, ce qui constitue une piste d'amélioration pour mieux présenter les
+                    données aux utilisateurs finaux.
+                </td>
             </tr>
             <tr>
                 <td style="border: 1px solid black; background-color: rgb(251, 248, 248); padding: 1.5rem 8px">AC 3 Concevoir une base de données relationnelle à partir d'un cahier des charges</td>
                 <td style="border: 1px solid black; background-color: rgb(251, 248, 248); padding: 1.5rem 8px">
                     <div style="width: 100%; background-color: #e0e0e0; border-radius: 5px; position: relative; border: 1px solid #7e7a7a">
-                        <div style="width: 60%; height: 20px; border-radius: 5px; background-color: #ffa500"></div>
+                        <div style="width: 80%; height: 20px; border-radius: 5px; background-color: #316950"></div>
                     </div>
+                    <p style="text-align: center; margin: 0">80%</p>
                 </td>
-                <td style="border: 1px solid black; background-color: #ffffff; padding: 1.5rem 8px">Justification pour l'AC 3 sur la conception de bases de données.</td>
+                <td style="border: 1px solid black; background-color: #ffffff; padding: 1.5rem 8px">
+                    J'ai conçu une base de données complète et cohérente pour modéliser un jeu de cartes, en identifiant correctement les entités principales (Joueur, Carte, Deck, Classe, Effet) et leurs relations. Le modèle inclut des tables de
+                    liaison appropriées comme RapourEffet pour les relations many-to-many entre cartes et effets, ou Rami pour modéliser les amitiés entre joueurs. J'ai implémenté toutes les contraintes d'intégrité référentielle avec des clés
+                    étrangères bien définies, et choisi des types de données adaptés (VARCHAR pour les chaînes, NUMBER pour les valeurs numériques, DATE pour les dates). La structure permet une navigation efficace entre les entités et supporte toutes
+                    les requêtes métier nécessaires. Mon approche méthodique de la normalisation évite la redondance tout en préservant la performance des requêtes.
+                </td>
             </tr>
         </table>
     </body>

@@ -5,39 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Autoévaluation</title>
     </head>
-    <body style="font-family: Arial, sans-serif">        <h1>Autoévaluation de la Compétence 2</h1>
-
-        <!-- Présentation de la SAÉ -->
+    <body style="font-family: Arial, sans-serif">        <h1>Autoévaluation de la Compétence 2</h1>        <!-- Présentation de la SAÉ -->
         <header style="text-align: center; margin-bottom: 2rem">
             <h3>Présentation des SAÉ 1.02 et 2.02</h3>
             <br />
 
             <p style="text-align: justify; font-weight: bold">
-                Durant cette compétence, j'ai travaillé sur deux projets d'optimisation algorithmique complémentaires. En S1 (SAÉ 1.02), j'ai comparé expérimentalement l'efficacité de différentes implémentations de listes triées d'objets pour les opérations d'ajout, de suppression et de test d'appartenance. En S2 (SAÉ 2.02), j'ai exploré algorithmiquement le problème de recherche de plus court chemin dans un graphe en implémentant les algorithmes de Bellman-Ford (point fixe) et de Dijkstra, puis en les appliquant au réseau du métro parisien.
+                Durant cette SAÉ (S1), nous avons comparé expérimentalement l'efficacité de deux types d'implémentation de listes triées d'objets pour les opérations d'ajout, de suppression et de test d'appartenance. En S2 (SAÉ 2.02), j'ai exploré algorithmiquement le problème de recherche de plus court chemin dans un graphe en implémentant les algorithmes de Bellman-Ford (point fixe) et de Dijkstra, puis en les appliquant au réseau du métro parisien.
             </p>
 
             <br />
-            <h3>Mes principales réalisations :</h3>
+            <h3>Nos principales réalisations :</h3>
             <br />
             <ul style="list-style: none; padding: 0; text-align: center">
-                <li>✔️ Implémentation de listes contiguës et chaînées avec comparaison de performances (S1)</li>
-                <li>✔️ Génération automatique de fichiers CSV et graphiques de comparaison (S1)</li>
-                <li>✔️ Écriture d'algorithmes en pseudo-code et implémentation Java (S1)</li>
+                <li>✔️ Une implémentation d'une liste contiguë (S1)</li>
+                <li>✔️ Une implémentation d'une liste chainée (S1)</li>
+                <li>✔️ Une implémentation optionnelle d'une liste chainée utilisant une liste chainée pour gérer ses places libres (S1)</li>
+                <li>✔️ Une génération automatique de fichier CSV pour les résultats en fonction du nombre d'éléments de base dans la liste (S1)</li>
+                <li>✔️ Une génération automatique de graphique à partir des fichiers CSV avec trois courbes pour comparer les trois implémentations (S1)</li>
+                <li>✔️ Une écriture en pseudo-code des algorithmes utilisés (S1)</li>
                 <li>✔️ Conception d'une interface Graphe et classe GrapheListe avec listes d'adjacence (S2)</li>
                 <li>✔️ Implémentation des algorithmes de Bellman-Ford et Dijkstra (S2)</li>
                 <li>✔️ Application aux plus courts chemins dans le métro parisien avec gestion des correspondances (S2)</li>
                 <li>✔️ Comparaison expérimentale des performances des deux algorithmes (S2)</li>
-                <li>✔️ Tests unitaires et validation complète des algorithmes (S1-S2)</li>
             </ul>
             <figure>
                 <img src="https://raw.githubusercontent.com/zonetecde/ppp-portfolio-but-1/refs/heads/main/sae1-2.png" alt="Comparaison listes triées S1" style="width: 45%; margin: 1rem 2% 1rem 2%; display: inline-block" />
                 <img src="https://github.com/zonetecde/ppp-portfolio-but-1/blob/main/sae2-2.png?raw=true" alt="Algorithmes de graphes S2" style="width: 45%; margin: 1rem 2% 1rem 2%; display: inline-block" />
             </figure>
-            <p style="text-align: center; width: 100%">Comparaison listes triées S1 et Algorithmes de graphes S2</p>
-
-            <p>
-                Les thèmes abordés incluent le développement Java, la comparaison d'algorithmes, l'implémentation de structures de données (listes triées, graphes), la génération de graphiques, l'analyse de complexité algorithmique, et l'application pratique à des problèmes réels comme la recherche d'itinéraires dans les transports en commun.
-            </p>
+            <p style="text-align: center; width: 100%">Compte rendu réalisé S1 et Algorithmes de graphes S2</p>
+            <p>Les thèmes abordés incluent le développement Java, la comparaison d'algorithmes, l'implémentation de listes triées et la génération de graphiques (S1), ainsi que l'implémentation de structures de données (graphes), l'analyse de complexité algorithmique, et l'application pratique à des problèmes réels comme la recherche d'itinéraires dans les transports en commun (S2).</p>
         </header>
 
         <!-- Tableau d'autoévaluation -->
@@ -56,7 +53,7 @@
                     <p style="text-align: center; margin: 0">75%</p>
                 </td>
                 <td style="border: 1px solid black; background-color: #ffffff; padding: 1.5rem 8px">
-                    Ma capacité d'analyse s'est considérablement améliorée entre S1 et S2. En S1, j'ai dû analyser les spécificités des différents types de listes triées et identifier les critères de performance pertinents, bien que mes analyses initiales manquaient parfois de précision. En S2, j'ai bien compris l'analyse du problème de plus court chemin en décomposant méthodiquement la problématique : conception du TAD Graphe, étude comparative des algorithmes de Bellman-Ford et Dijkstra, analyse de leur complexité respective, et identification des contraintes spécifiques au métro parisien (bidirectionnalité, correspondances). Cette progression montre ma capacité croissante à structurer l'approche d'un problème complexe et à anticiper les difficultés d'implémentation.
+                    Dans le cadre de cette SAÉ (S1), j'ai dû analyser les spécificités des différents types de listes triées et identifier les critères de performance les plus pertinents à prendre en compte lors du codage de ces dernières. Cette étape initiale nous a permis de mieux structurer notre approche et de se répartir le travail équitablement avec Guillaume. Cependant, j'ai constaté que mes analyses initiales manquaient parfois de précision. Par exemple, certaines hypothèses sur les performances de la liste chaînée optionnelle n'ont pas été validées en pratique, ce qui a nécessité des ajustements en cours de projet. Cette expérience m'a appris l'importance de poser des bases solides dès le départ pour éviter des retours en arrière coûteux. Pour m'améliorer, je devrais approfondir davantage les analyses théoriques en amont, notamment en étudiant plus rigoureusement le sujet avant de passer à l'expérimentation. En S2, j'ai bien compris l'analyse du problème de plus court chemin en décomposant méthodiquement la problématique : conception du TAD Graphe, étude comparative des algorithmes de Bellman-Ford et Dijkstra, analyse de leur complexité respective, et identification des contraintes spécifiques au métro parisien (bidirectionnalité, correspondances). Cette progression montre ma capacité croissante à structurer l'approche d'un problème complexe.
                 </td>
             </tr>            <tr>
                 <td style="border: 1px solid black; background-color: rgb(251, 248, 248); padding: 1.5rem 8px">AC 2 Comparer des algorithmes pour des problèmes classiques</td>
@@ -67,7 +64,7 @@
                     <p style="text-align: center; margin: 0">85%</p>
                 </td>
                 <td style="border: 1px solid black; background-color: #ffffff; padding: 1.5rem 8px">
-                    J'ai bien maîtrisé la comparaison d'algorithmes sur les deux SAÉ. En S1, j'ai comparé trois implémentations de listes triées avec génération automatique de CSV et graphiques, observant la supériorité des listes chaînées pour les opérations en tête et des listes contiguës en fin. En S2, j'ai implémenté et comparé rigoureusement Bellman-Ford et Dijkstra : analyse théorique des complexités, tests sur 5 graphes différents, mesure des temps d'exécution, et application au métro parisien. J'ai découvert que Dijkstra surpasse systématiquement Bellman-Ford en performance grâce à sa stratégie. Cette double expérience m'a permis de maîtriser les méthodologies de comparaison algorithmique.
+                    La comparaison des trois types de listes triées a été au cœur de cette SAÉ (S1). Guillaume et moi avons conçu une série de tests rigoureux pour évaluer les performances des opérations d'ajout, de suppression et de recherche sur ces listes en fonction de leur taille de départ. Nous avons utilisé des outils comme la génération automatique de fichiers CSV et des graphiques pour visualiser les résultats. Cette démarche m'a permis d'observer des différences significatives, notamment l'efficacité accrue des listes chaînées pour les opérations en tête et la supériorité de la liste contiguë pour les opérations en fin. J'ai également appris à interpréter les données obtenues pour en tirer des conclusions pertinentes. Cependant, je pense que je pourrais encore améliorer ma capacité à concevoir des expériences de comparaison plus complexes pour explorer davantage les nuances des algorithmes étudiés. En S2, j'ai implémenté et comparé rigoureusement Bellman-Ford et Dijkstra : analyse théorique des complexités, tests sur 5 graphes différents, mesure des temps d'exécution, et application au métro parisien. J'ai découvert que Dijkstra surpasse systématiquement Bellman-Ford en performance grâce à sa stratégie gloutte. Cette double expérience m'a permis de maîtriser les méthodologies de comparaison algorithmique.
                 </td>
             </tr>            <tr>
                 <td style="border: 1px solid black; background-color: rgb(251, 248, 248); padding: 1.5rem 8px">AC 3 Expérimenter la notion de compilation</td>
@@ -78,7 +75,7 @@
                     <p style="text-align: center; margin: 0">90%</p>
                 </td>
                 <td style="border: 1px solid black; background-color: #ffffff; padding: 1.5rem 8px">
-                    Mon expérience de la compilation s'est approfondie significativement entre S1 et S2. En S1, j'ai découvert l'impact de la compilation sur les performances avec Java, observant comment la gestion mémoire influence l'efficacité des structures contiguës vs chaînées. En S2, j'ai travaillé avec des projets Java plus complexes incluant interfaces, classes abstraites et génériques, gérant la compilation de multiples classes interdépendantes (Arc, Arcs, Graphe, GrapheListe, Valeurs, BellmanFord, Dijkstra). J'ai maîtrisé les concepts avancés comme les collections génériques (List<Arc>, Map<String,Double>), la compilation d'algorithmes récursifs complexes, et l'optimisation du code Java pour les boucles des algorithmes de graphes. Cette progression montre ma compréhension approfondie des enjeux de compilation en programmation orientée objet.
+                    Pendant cette SAÉ (S1), j'ai découvert l'importance de la compilation et de son rôle dans la performance des applications. En utilisant Java, j'ai pu observer comment certaines opérations influent directement l'efficacité des algorithmes, comme la gestion de la mémoire et le coût des opérations sur des structures contiguës ou chaînées. Par exemple, la liste contiguë, bien qu'efficace pour les opérations en fin, montrait des pics de performances dégradées dus aux décalages nécessaires lors de l'ajout en tête. Ces observations m'ont permis de comprendre que la compilation et l'optimisation logicielle ne sont pas des processus universels, mais doivent être adaptés au cas d'usage. En S2, j'ai travaillé avec des projets Java plus complexes incluant interfaces, classes abstraites, gérant la compilation de multiples classes interdépendantes (Arc, Arcs, Graphe, GrapheListe, Valeurs, BellmanFord, Dijkstra). J'ai maîtrisé les concepts avancés comme les collections génériques (List<Arc>, Map<String,Double>), la compilation d'algorithmes récursifs complexes, et l'optimisation du code Java pour les boucles des algorithmes de graphes.
                 </td>
             </tr>            <tr>
                 <td style="border: 1px solid black; background-color: rgb(251, 248, 248); padding: 1.5rem 8px">AC 4 Formaliser et mettre en œuvre des outils mathématiques</td>
@@ -89,7 +86,7 @@
                     <p style="text-align: center; margin: 0">80%</p>
                 </td>
                 <td style="border: 1px solid black; background-color: #ffffff; padding: 1.5rem 8px">
-                    Ma maîtrise des outils mathématiques a progressé remarquablement entre S1 et S2. En S1, j'ai appliqué des formules statistiques pour calculer les temps moyens et analyser les courbes de performance des listes triées. En S2, j'ai formalisé et implémenté des algorithmes mathématiques complexes : écriture rigoureuse en pseudo-code des algorithmes de Bellman-Ford et Dijkstra, calcul de plus courts chemins avec fonction de valeur L(X) et gestion des parents et analyse de complexité algorithmique. J'ai aussi modélisé mathématiquement les pénalités de correspondance dans le métro parisien. Cette évolution démontre ma capacité à transformer des problèmes réels en modèles mathématiques.
+                    L'utilisation des outils mathématiques a été essentielle pour interpréter les résultats obtenus en S1. Avec Guillaume, nous avons appliqué des formules pour calculer les temps moyens et analyser les courbes générées à partir des fichiers CSV. Cette formalisation a permis de dégager des tendances claires, comme la croissance exponentielle des temps pour certaines opérations ou la linéarité pour d'autres. J'ai également utilisé mes connaissances en statistiques pour interpréter les écarts entre les différentes implémentations, ce qui a renforcé la fiabilité de nos conclusions. Malgré celà, nous aurions pu aller plus loin dans la modélisation mathématique des performances des listes triées pour prédire leur comportement dans des cas non testés expérimentalement, mais nous n'y avons pas pensé sur le moment. En S2, j'ai formalisé et implémenté des algorithmes mathématiques complexes : écriture rigoureuse en pseudo-code de l'algorithme de Bellman-Ford, calcul de plus courts chemins avec fonction de valeur L(X) et gestion des parents et analyse de complexité algorithmique. J'ai aussi modélisé mathématiquement les pénalités de correspondance dans le métro parisien.
                 </td>
             </tr>
         </table>
